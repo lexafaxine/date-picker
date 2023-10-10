@@ -1,0 +1,36 @@
+.date-time-picker {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start; 
+    padding-top: 10%; /* Adjusted padding to be a bit less */
+    width: 100%; /* Ensures the container takes the full width */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+    padding: 20px; /* Adds some spacing around the content */
+}
+
+.caption {
+    font-size: 18px; /* Increase font size for readability */
+    font-weight: bold; /* Makes the font bold */
+    margin-bottom: 20px; /* Adds spacing between the caption and date/time pickers */
+    color: #333; /* Dark gray color for the text */
+    width: 100%; /* Ensures the caption takes the full width of the parent */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+}
+
+.date-picker,
+.time-picker {
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for smaller screens, like smartphones */
+@media (max-width: 768px) {
+    .caption {
+        font-size: 16px; /* Slightly decrease font size for smaller screens */
+        margin-bottom: 15px; /* Adjusts spacing */
+    }
+
+    .date-time-picker {
+        padding: 15px; /* Adjusts spacing */
+    }
+}
